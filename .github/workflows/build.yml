@@ -12,8 +12,11 @@ env:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
+
     strategy:
+      fail-fast: false
       matrix:
+        # add 'macos-26-intel'
         os: [
           ubuntu-24.04,
           ubuntu-24.04-arm,
