@@ -22,13 +22,14 @@ kotlin {
         nodejs()
     }
 
-    wasmJs {
-        nodejs()
-    }
-
-    wasmWasi {
-        nodejs()
-    }
+    // TODO seems to be a bug in power-assert IR generation for Wasm
+    // wasmJs {
+    //     nodejs()
+    // }
+    //
+    // wasmWasi {
+    //     nodejs()
+    // }
 
     // Tier 1
     macosArm64()
