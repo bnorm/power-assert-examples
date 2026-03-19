@@ -18,8 +18,7 @@ kotlin {
     jvm()
 
     js {
-        // TODO browser missing on GitHub CI
-        // browser()
+        browser()
         nodejs()
     }
 
