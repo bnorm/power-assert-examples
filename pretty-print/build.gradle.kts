@@ -22,14 +22,13 @@ kotlin {
         nodejs()
     }
 
-    // TODO(KT-85089) bug in power-assert IR generation for Wasm
-    // wasmJs {
-    //     nodejs()
-    // }
-    //
-    // wasmWasi {
-    //     nodejs()
-    // }
+    wasmJs {
+        nodejs()
+    }
+
+    wasmWasi {
+        nodejs()
+    }
 
     // Tier 1
     macosArm64()
