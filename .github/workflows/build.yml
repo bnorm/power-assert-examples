@@ -44,5 +44,6 @@ jobs:
             **/build/test-results/**/TEST-*.xml
           check_name: 'Test Report - ${{ matrix.os }}'
           detailed_summary: true
+          include_passed: true
           include_time_in_summary: true
           group_suite: true
