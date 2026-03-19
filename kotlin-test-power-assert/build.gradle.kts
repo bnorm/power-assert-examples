@@ -23,7 +23,7 @@ kotlin {
         nodejs()
     }
 
-    // TODO seems to be a bug in power-assert IR generation for Wasm
+    // TODO(KT-85089) bug in power-assert IR generation for Wasm
     // wasmJs {
     //     nodejs()
     // }

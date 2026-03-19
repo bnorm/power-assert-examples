@@ -23,3 +23,4 @@ rootProject.name = "power-assert-examples"
 
 include(":fluent-assert")
 include(":kotlin-test-power-assert")
+include(":pretty-print")
