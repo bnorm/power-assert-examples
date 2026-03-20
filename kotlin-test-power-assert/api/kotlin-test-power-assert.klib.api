@@ -1,0 +1,10 @@
+// Klib ABI Dump
+// Targets: [androidNativeArm32, androidNativeArm64, androidNativeX64, androidNativeX86, iosArm64, iosSimulatorArm64, iosX64, js, linuxArm64, linuxX64, macosArm64, macosX64, mingwX64, tvosArm64, tvosSimulatorArm64, tvosX64, wasmJs, wasmWasi, watchosArm32, watchosArm64, watchosDeviceArm64, watchosSimulatorArm64, watchosX64]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <power-assert-examples:kotlin-test-power-assert>
+final fun kotlinx.test.powerassert/powerAssert$powerassert(kotlin/Boolean, kotlin/String? = ..., kotlin/Function0<kotlinx.powerassert/CallExplanation>) // kotlinx.test.powerassert/powerAssert$powerassert|powerAssert$powerassert(kotlin.Boolean;kotlin.String?;kotlin.Function0<kotlinx.powerassert.CallExplanation>){}[0]
+final fun kotlinx.test.powerassert/powerAssert(kotlin/Boolean, kotlin/String? = ...) // kotlinx.test.powerassert/powerAssert|powerAssert(kotlin.Boolean;kotlin.String?){}[0]

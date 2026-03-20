@@ -1,7 +1,12 @@
-@file:OptIn(ExperimentalWasmDsl::class, ExperimentalKotlinGradlePluginApi::class)
+@file:OptIn(
+    ExperimentalWasmDsl::class,
+    ExperimentalKotlinGradlePluginApi::class,
+    ExperimentalAbiValidation::class,
+)
 
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
+import org.jetbrains.kotlin.gradle.dsl.abi.ExperimentalAbiValidation
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
@@ -13,6 +18,10 @@ kotlin {
 
     compilerOptions {
         optIn.add("kotlinx.powerassert.ExperimentalPowerAssert")
+    }
+
+    abiValidation {
+        enabled = true
     }
 
     jvm()

@@ -1,0 +1,7 @@
+public final class kotlinx/test/powerassert/AssertKt {
+	public static final fun powerAssert (ZLjava/lang/String;)V
+	public static synthetic fun powerAssert$default (ZLjava/lang/String;ILjava/lang/Object;)V
+	public static final synthetic fun powerAssert$powerassert (ZLjava/lang/String;Lkotlin/jvm/functions/Function0;)V
+	public static synthetic fun powerAssert$powerassert$default (ZLjava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
+}
+
