@@ -1,13 +1,10 @@
-package kotlinx.test.powerassert
+package kotlinx.test.fluent
 
 import kotlinx.powerassert.EqualityExpression
 import org.opentest4j.AssertionFailedError
 import org.opentest4j.MultipleFailuresError
 
-internal actual fun fail(
-    message: String,
-    equalityErrors: List<EqualityExpression>
-) {
+internal actual fun fail(message: String, equalityErrors: List<EqualityExpression>): Nothing {
     throw when (equalityErrors.size) {
         0 -> AssertionFailedError(message)
 

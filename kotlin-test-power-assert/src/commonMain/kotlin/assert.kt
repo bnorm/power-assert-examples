@@ -25,32 +25,30 @@ fun powerAssert(condition: Boolean, @PowerAssert.Ignore message: String? = null)
         }
 
         val failureMessage = buildString {
-            // OpenTest4J likes to trim messages. Use ZWSP (U+200B) characters to preserve newlines.
-            appendLine(message?.takeIf { it.isNotBlank() } ?: "\u200B")
+            if (message?.isNotBlank() == true) appendLine(message)
             append(explanation.toDefaultMessage())
-            append("\u200B")
         }
 
-        when (equalityErrors.size) {
-            0 -> fail(message)
-            1 -> equalityErrors[0].let { error -> assertEquals(error.rhs, error.lhs, message) }
-            else -> failMultiple(failureMessage, equalityErrors)
-        }
+        fail(failureMessage, equalityErrors)
     }
 }
 
-internal expect fun failMultiple(
+internal expect fun fail(
     message: String,
     equalityErrors: List<EqualityExpression>
 )
 
-internal fun failMultipleDefault(
+internal fun failDefault(
     message: String,
     equalityErrors: List<EqualityExpression>
 ) {
-    throw AssertionError(message).apply {
-        for (expression in equalityErrors) {
-            addSuppressed(expression.toAssertion())
+    when (equalityErrors.size) {
+        0 -> fail(message)
+        1 -> equalityErrors[0].let { error -> assertEquals(error.rhs, error.lhs, message) }
+        else -> throw AssertionError(message).apply {
+            for (expression in equalityErrors) {
+                addSuppressed(expression.toAssertion())
+            }
         }
     }
 }

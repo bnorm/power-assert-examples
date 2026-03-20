@@ -4,7 +4,7 @@ import kotlinx.powerassert.*
 
 @PowerAssert
 fun <T> assertThat(subject: T, block: AssertScope<T>.() -> Unit) {
-    val primary = PowerAssert.explanation ?: error("power-assert compiler-plugin is required")
+    val primary = PowerAssert.explanation ?: error("power-assert compiler plugin is required")
 
     val failures = mutableListOf<Pair<String?, List<Expression>>>()
     val scope = object : AssertScope<T> {
@@ -43,14 +43,25 @@ private fun fail(
         val combined = CallExplanation(primary.offset, primary.source, primary.arguments + synthetic)
 
         // Craft a message that includes all failure messages and diagram of entire assertion scope.
-        throw AssertionError(buildString {
+        val message = buildString {
             appendLine("Assertion failed:")
             for ((msg, _) in failures) {
                 if (msg != null) appendLine(" * $msg")
             }
             if (failures.isNotEmpty()) appendLine()
             append(combined.toDefaultMessage())
-        })
+        }
+
+        val equalityErrors = buildList {
+            for (expression in combined.expressions) {
+                if (expression is EqualityExpression && expression.value == false) {
+                    add(expression)
+                }
+            }
+        }
+
+        fail(message, equalityErrors)
     }
 }
 
+internal expect fun fail(message: String, equalityErrors: List<EqualityExpression>): Nothing

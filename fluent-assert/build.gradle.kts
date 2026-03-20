@@ -60,6 +60,9 @@ kotlin {
         commonMain.dependencies {
             implementation(libs.kotlin.powerassert)
         }
+        jvmMain.dependencies {
+            implementation(libs.opentest4j)
+        }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
         }
