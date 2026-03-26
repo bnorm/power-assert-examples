@@ -5,7 +5,6 @@ pluginManagement {
         mavenLocal()
         maven("https://packages.jetbrains.team/maven/p/kt/bootstrap")
         maven("https://packages.jetbrains.team/maven/p/kt/dev")
-        maven("https://packages.jetbrains.team/maven/p/kt/experimental")
     }
 }
 
@@ -15,7 +14,6 @@ dependencyResolutionManagement {
         mavenLocal()
         maven("https://packages.jetbrains.team/maven/p/kt/bootstrap")
         maven("https://packages.jetbrains.team/maven/p/kt/dev")
-        maven("https://packages.jetbrains.team/maven/p/kt/experimental")
     }
 }
 
