@@ -1,7 +1,7 @@
 package kotlinx.io
 
-import kotlinx.powerassert.CallExplanation
-import kotlinx.powerassert.PowerAssert
+import kotlin.powerassert.CallExplanation
+import kotlin.powerassert.PowerAssert
 
 @PowerAssert
 fun pprintln(message: String) {

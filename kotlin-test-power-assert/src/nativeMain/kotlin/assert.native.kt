@@ -1,6 +1,6 @@
 package kotlinx.test.powerassert
 
-import kotlinx.powerassert.EqualityExpression
+import kotlin.powerassert.EqualityExpression
 
 internal actual fun fail(
     message: String,

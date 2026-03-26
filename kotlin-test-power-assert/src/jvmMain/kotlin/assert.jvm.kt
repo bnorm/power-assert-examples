@@ -1,6 +1,6 @@
 package kotlinx.test.powerassert
 
-import kotlinx.powerassert.EqualityExpression
+import kotlin.powerassert.EqualityExpression
 import org.opentest4j.AssertionFailedError
 import org.opentest4j.MultipleFailuresError
 

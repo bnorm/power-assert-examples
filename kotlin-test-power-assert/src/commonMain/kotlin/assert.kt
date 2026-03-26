@@ -1,8 +1,8 @@
 package kotlinx.test.powerassert
 
-import kotlinx.powerassert.EqualityExpression
-import kotlinx.powerassert.PowerAssert
-import kotlinx.powerassert.toDefaultMessage
+import kotlin.powerassert.EqualityExpression
+import kotlin.powerassert.PowerAssert
+import kotlin.powerassert.toDefaultMessage
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.contract
 import kotlin.test.assertEquals

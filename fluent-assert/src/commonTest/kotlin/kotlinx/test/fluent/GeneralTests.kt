@@ -28,7 +28,7 @@ class GeneralTests {
                     check(subject.name == "Kodee")
                                   |    |
                                   |    false
-                                  Unknown
+                                  "Unknown"
 
                 }
             """.trimIndent()
@@ -52,7 +52,7 @@ class GeneralTests {
 
                 assertThat(subject) {
                            |
-                           Unknown
+                           "Unknown"
 
                     require(subject is Mascot)
                                     |

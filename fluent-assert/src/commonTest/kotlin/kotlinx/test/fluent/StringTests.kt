@@ -25,7 +25,7 @@ class StringTests {
 
                 assertThat(subject) {
                            |
-                           Kotlin
+                           "Kotlin"
 
                     hasLength(expectedLength)
                               |
@@ -33,7 +33,7 @@ class StringTests {
 
                     startsWith(expectedPrefix)
                                |
-                               kot
+                               "kot"
 
                 }
             """.trimIndent()

@@ -17,12 +17,10 @@ kotlin {
     jvmToolchain(21)
 
     compilerOptions {
-        optIn.add("kotlinx.powerassert.ExperimentalPowerAssert")
+        optIn.add("kotlin.powerassert.ExperimentalPowerAssert")
     }
 
-    abiValidation {
-        enabled = true
-    }
+    abiValidation()
 
     jvm()
 

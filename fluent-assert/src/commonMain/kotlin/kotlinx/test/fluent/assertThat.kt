@@ -1,6 +1,6 @@
 package kotlinx.test.fluent
 
-import kotlinx.powerassert.*
+import kotlin.powerassert.*
 
 @PowerAssert
 fun <T> assertThat(subject: T, block: AssertScope<T>.() -> Unit) {

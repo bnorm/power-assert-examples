@@ -1,7 +1,7 @@
 package kotlinx.test.fluent
 
-import kotlinx.powerassert.Explanation
-import kotlinx.powerassert.PowerAssert
+import kotlin.powerassert.Explanation
+import kotlin.powerassert.PowerAssert
 
 @PowerAssert.Ignore // Always exclude the assertion scope from Power-Assert explanations.
 interface AssertScope<out T> {

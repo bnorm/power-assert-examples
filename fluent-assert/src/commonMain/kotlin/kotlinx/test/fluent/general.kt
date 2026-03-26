@@ -1,6 +1,6 @@
 package kotlinx.test.fluent
 
-import kotlinx.powerassert.PowerAssert
+import kotlin.powerassert.PowerAssert
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.contract
 

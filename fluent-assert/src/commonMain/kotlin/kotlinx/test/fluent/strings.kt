@@ -1,6 +1,6 @@
 package kotlinx.test.fluent
 
-import kotlinx.powerassert.PowerAssert
+import kotlin.powerassert.PowerAssert
 
 @PowerAssert
 fun AssertScope<String>.hasLength(length: Int) {
