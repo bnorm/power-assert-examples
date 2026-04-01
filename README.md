@@ -1,13 +1,7 @@
 # power-assert-examples
 
-> [!WARNING]  
-> This repository uses _**development versions**_ of Kotlin which may be deleted at any time.
-> If you experience build failures due to missing dependencies,
-> check that you have the latest changes from this repository.
-
-# Examples
-
-These examples are provided as a companion to the Kotlin Power-Assert Explanation KEEP. (link coming soon!)
+These examples are provided as a companion to the
+[Kotlin Power-Assert Explanation KEEP](https://github.com/Kotlin/KEEP/discussions/478).
 They can also be used as a playground for experimenting with the new Power-Assert APIs which will be available in 2.4.0.
 
 ## kotlin-test-power-assert
