@@ -3,7 +3,6 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
         mavenLocal()
-        maven("https://packages.jetbrains.team/maven/p/kt/bootstrap")
     }
 }
 
@@ -11,7 +10,6 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
         mavenLocal()
-        maven("https://packages.jetbrains.team/maven/p/kt/bootstrap")
     }
 }
 
