@@ -66,7 +66,6 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(libs.kotlin.test)
-            implementation(libs.kotlin.powerassert)
         }
         jvmMain.dependencies {
             implementation(libs.opentest4j)

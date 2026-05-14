@@ -57,9 +57,6 @@ kotlin {
     @Suppress("DEPRECATION") tvosX64()
 
     sourceSets {
-        commonMain.dependencies {
-            implementation(libs.kotlin.powerassert)
-        }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
         }
